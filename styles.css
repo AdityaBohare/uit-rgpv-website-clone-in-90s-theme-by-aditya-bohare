@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #FFFFFF;
+    color: #000000;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #C8102E;
+    color: #FFFFFF;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 5px solid #000000;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+h1 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    text-shadow: 2px 2px #000000;
+}
+
+.menu-btn {
+    background: none;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: block;
+}
+
+.nav-menu {
+    display: none;
+    background-color: #C8102E;
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid #000000;
+}
+
+.nav-menu.active {
+    display: block;
+}
+
+.nav-menu ul {
+    list-style: none;
+}
+
+.nav-menu ul li {
+    margin: 0.5rem 0;
+}
+
+.nav-menu ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-shadow: 1px 1px #000000;
+}
+
+.nav-menu ul li a:hover {
+    color: #000000;
+}
+
+.hero {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 3px solid #C8102E;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    color: #C8102E;
+    text-shadow: 2px 2px #000000;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #C8102E;
+    color: #FFFFFF;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: 2px solid #000000;
+    font-size: 0.8rem;
+    text-shadow: 1px 1px #000000;
+}
+
+.btn:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.content-section {
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 2px dashed #C8102E;
+}
+
+.content-section h2 {
+    font-size: 1.2rem;
+    color: #C8102E;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px #000000;
+}
+
+.content-section p {
+    font-size: 0.8rem;
+}
+
+footer {
+    background-color: #C8102E;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.7rem;
+    border-top: 3px solid #000000;
+    text-shadow: 1px 1px #000000;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .header-container {
+        flex-wrap: nowrap;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+        background: none;
+        border: none;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-menu ul li {
+        margin: 0 1rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .content-section p {
+        font-size: 1rem;
+    }
+}
